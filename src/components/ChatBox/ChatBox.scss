@@ -1,0 +1,17 @@
+#chat-box {
+    height: 100%;
+    position: relative;
+    background-image: url("../../assets/bg-chat.png");
+
+    .chat-box-send {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        background: #202b33;
+        padding: 0 1rem;
+        align-items: center;
+        height: 62px;
+    }
+}
