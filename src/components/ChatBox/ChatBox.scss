@@ -1,7 +1,14 @@
 #chat-box {
     height: 100%;
     position: relative;
-    background-image: url("../../assets/bg-chat.png");
+    background-image: url("../../assets/bg-chat.jpg");
+
+    .chat-message-container {
+        display: flex;
+        flex-direction: column;
+        background: transparent;
+        height: 100%;
+    }
 
     .chat-box-send {
         position: absolute;
@@ -10,8 +17,29 @@
         width: 100%;
         display: flex;
         background: #202b33;
+        gap: 1rem;
         padding: 0 1rem;
         align-items: center;
         height: 62px;
+
+        svg {
+            cursor: pointer;
+        }
+
+        input {
+            height: 42px;
+            width: 100%;
+            border: none;
+            background: #2a3942;
+            border-radius: 8px;
+            outline: none;
+            padding: 0.5rem 1rem;
+
+            &::placeholder {
+                font-size: 0.9375rem;
+                font-weight: 400;
+                color: #8696a0;
+            }
+        }
     }
 }

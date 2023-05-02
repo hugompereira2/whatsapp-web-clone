@@ -1,6 +1,7 @@
 #chat-painel {
     width: 100%;
     display: flex;
+    position: relative;
     flex-direction: column;
 
     .chat-contact-container {
@@ -8,7 +9,7 @@
         width: 100%;
         align-items: center;
         padding-right: 1rem;
-        height: 59px;
+        height: 64px;
         background: #202c33;
     }
 

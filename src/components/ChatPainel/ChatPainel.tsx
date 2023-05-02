@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef, RefObject, memo } from "react";
 import Teste from "../../assets/teste.jpg"
+import ChatMessage from "../ChatMessage/ChatMessage";
 import "./ChatPainel.scss";
 
 import { BsThreeDotsVertical } from 'react-icons/bs'

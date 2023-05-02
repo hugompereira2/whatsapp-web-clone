@@ -17,8 +17,9 @@
         background: #202c33;
 
         .user-options {
-            width: 110px;
+            width: 130px;
             display: flex;
+            align-items: center;
             justify-content: space-between;
         }
 
@@ -99,7 +100,6 @@
         align-items: center;
         cursor: pointer;
         padding: 1rem 0 1rem;
-        padding-right: 1rem;
     }
 
     .archive-container {
@@ -131,5 +131,44 @@
         margin-right: 15px;
         font-size: 0.8rem;
         color: #00a884;
+    }
+
+    .on-click-animation {
+        transform: rotate(180deg);
+        animation: rotation-change 0.3s;
+    }
+
+    @keyframes rotation-change {
+        0% {
+            opacity: 0.3;
+            transform: rotate(0deg);
+        }
+        50% {
+            opacity: 0.5;
+            transform: rotate(90deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(180deg);
+        }
+    }
+
+    .off-click-animation {
+        animation: off-rotation-change 0.3s;
+    }
+
+    @keyframes off-rotation-change {
+        0% {
+            opacity: 0.3;
+            transform: rotate(180deg);
+        }
+        50% {
+            opacity: 0.5;
+            transform: rotate(90deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
     }
 }

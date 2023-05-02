@@ -1,18 +1,42 @@
 :root {
-    --black-bg: #090E16;
-    --purple: #7B4AE2;
-    --pink: #C83267;
-    --grey: #FFFFFF80;
-
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: var(--black-bg);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+}
+
+.svg-container-tooltip {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        display: none;
+        transition: opacity 5s;
+        opacity: 0;
+    }
+}
+
+.svg-container-tooltip:hover {
+    span {
+        display: flex !important;
+        opacity: 1;
+        padding: 5px 8px;
+        border: 1px solid #8696a0;
+        background: #222d34;
+        position: absolute;
+        z-index: 999;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        top: 27px;
+        white-space: nowrap;
+    }
 }
 
 * {
