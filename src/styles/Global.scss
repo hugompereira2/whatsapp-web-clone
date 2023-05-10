@@ -10,11 +10,20 @@
 }
 
 .svg-container-tooltip {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
     cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
+    transition: all 0.6s;
     align-items: center;
+
+    &:active {
+        transition: all 0.3s;
+        background: #86a3b3;
+    }
 
     span {
         display: none;
@@ -27,6 +36,7 @@
     span {
         display: flex !important;
         opacity: 1;
+        user-select: none;
         padding: 5px 8px;
         border: 1px solid #8696a0;
         background: #222d34;
@@ -34,7 +44,7 @@
         z-index: 999;
         font-size: 0.8125rem;
         font-weight: 500;
-        top: 27px;
+        top: 40px;
         white-space: nowrap;
     }
 }
@@ -43,7 +53,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue";
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -107,6 +117,7 @@ span {
 
 .container {
     display: flex;
+    overflow: hidden;
     min-height: 100vh;
     max-width: 1702px;
     margin: 0 auto;
@@ -204,10 +215,6 @@ button {
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
-}
-
-button:hover {
-    border-color: #646cff;
 }
 
 button:focus,

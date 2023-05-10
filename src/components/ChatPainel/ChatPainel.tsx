@@ -20,8 +20,12 @@ const ChatPainel = () => {
                     <p className="font-segoe">Clique aqui para dados do contato</p>
                 </div>
                 <div className="chat-contact-options">
-                    <AiOutlineSearch size={22} fill="#aebac1" />
-                    <BsThreeDotsVertical size={22} fill="#aebac1" />
+                    <div className="svg-container-tooltip">
+                        <AiOutlineSearch size={22} fill="#aebac1" />
+                    </div>
+                    <div className="svg-container-tooltip">
+                        <BsThreeDotsVertical size={22} fill="#aebac1" />
+                    </div>
                 </div>
             </div>
             <ChatBox />
